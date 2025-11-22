@@ -33,6 +33,28 @@ class SmartHomeServiceProvider extends ServiceProvider
 
         // Extend admin system configuration with custom shipping methods
         $this->extendSystemConfiguration();
+
+        // Override state requirement for SmartHome theme
+        $this->overrideStateRequirement();
+    }
+
+    /**
+     * Override state requirement to make it optional.
+     * SmartHome theme doesn't use state field in checkout.
+     *
+     * @return void
+     */
+    protected function overrideStateRequirement()
+    {
+        // Override the Core helper to always return false for state requirement
+        $this->app->extend('core', function ($core, $app) {
+            return new class($app) extends \Webkul\Core\Core {
+                public function isStateRequired()
+                {
+                    return false;
+                }
+            };
+        });
     }
 
     /**

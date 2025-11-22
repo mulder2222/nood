@@ -29,7 +29,7 @@
             <x-shop::layouts.opening-status />
         </div>
         <div class="">
-            <a href="https://www.rijksoverheid.nl/" target="_blank"><img class="lazy w-full max-w-[340px] h-[322px] object-cover" data-src="{{ bagisto_asset('images/nood-situatie-voorbereid.jpeg') }}" alt="Ben jij voorbereid?" /></a>
+            <a href="https://www.rijksoverheid.nl/onderwerpen/veiligheidsregios-en-crisisbeheersing" target="_blank"><img class="lazy w-full max-w-[340px] h-[322px] object-cover" data-src="{{ bagisto_asset('images/nood-situatie-voorbereid.jpeg') }}" alt="Ben jij voorbereid?" /></a>
         </div>
     </div>
 </div>
