@@ -1,6 +1,6 @@
 {
   "src/Resources/assets/css/app.css": {
-    "file": "assets/app-HkA9Mp_O.css",
+    "file": "assets/app-YVRyHWeX.css",
     "src": "src/Resources/assets/css/app.css",
     "isEntry": true
   },
@@ -35,6 +35,10 @@
   "src/Resources/assets/images/favicon.ico": {
     "file": "assets/favicon-Df9chQdB.ico",
     "src": "src/Resources/assets/images/favicon.ico"
+  },
+  "src/Resources/assets/images/generators.jpeg": {
+    "file": "assets/generators-D1QmZ7cu.jpeg",
+    "src": "src/Resources/assets/images/generators.jpeg"
   },
   "src/Resources/assets/images/green-check.svg": {
     "file": "assets/green-check-BPYjzz5K.svg",
