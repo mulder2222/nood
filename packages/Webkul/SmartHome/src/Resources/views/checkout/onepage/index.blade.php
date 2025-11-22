@@ -106,7 +106,7 @@
                         </div>
 
                         <div
-                            class="flex flex-col gap-3"
+                            class="flex flex-col items-center gap-3"
                             v-if="canPlaceOrder"
                         >
                             <template v-if="cart.payment_method == 'paypal_smart_button'">
@@ -119,7 +119,7 @@
                             </template>
 
                             <template v-else>
-                                <div class="flex flex-col gap-2">
+                                <div class="flex flex-col items-center gap-2">
                                     <x-shop::button
                                         type="button"
                                         class="primary-button w-max rounded-2xl bg-sentraRed px-11 py-3 max-md:mb-4 max-md:w-full max-md:max-w-full max-md:rounded-lg max-sm:py-1.5"
