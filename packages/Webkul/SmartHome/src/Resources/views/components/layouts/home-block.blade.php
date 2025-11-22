@@ -40,7 +40,7 @@
             <img class="lazy w-full h-40 object-cover object-center" data-src="{{ bagisto_asset('images/banner-jerrycan.jpeg') }}" alt="Jerrycan" />
         </div>
         <div class="overflow-hidden">
-            <img class="lazy w-full h-40 object-cover object-center" data-src="{{ bagisto_asset('images/olie-actiecode-actie.jpeg') }}" alt="Olie actie coupon" />
+            <img class="lazy w-full h-40 object-cover object-center" data-src="{{ bagisto_asset('images/olie-actiecode-actie-banner.jpeg') }}" alt="Olie actie coupon" />
         </div>
     </div>
 </div>
