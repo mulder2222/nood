@@ -62,10 +62,10 @@
                     <!-- Product Sale Badge -->
                     <p
                         class="absolute top-1.5 inline-block bg-sentraRed px-2.5 text-sm text-white max-sm:rounded-l-none max-sm:px-2 max-sm:py-0.5 max-sm:text-xs ltr:left-1.5 max-sm:ltr:left-0 rtl:right-5 max-sm:rtl:right-0"
-                        v-if="product.on_sale"
+                        v-if="product.on_sale && discountPercent > 0"
                     >
                     <!-- product sale percentage -->
-                    <span class="font-bold">-@{{ product.discount_percent }}%</span>
+                    <span class="font-bold">-@{{ discountPercent }}%</span>
                     </p>
 
                     <!-- Product New Badge -->
@@ -141,10 +141,10 @@
 
                 <div class="action-items bg-black">
                     <p
-                        class="absolute top-5 inline-block rounded-[44px] bg-red-500 px-2.5 text-sm text-white ltr:left-5 max-sm:ltr:left-2 rtl:right-5"
-                        v-if="product.on_sale"
+                        class="absolute top-5 inline-block bg-sentraRed px-2.5 text-sm text-white ltr:left-5 max-sm:ltr:left-2 rtl:right-5"
+                        v-if="product.on_sale && discountPercent > 0"
                     >
-                        @lang('shop::app.components.products.card.sale')
+                        <span class="font-bold">-@{{ discountPercent }}%</span>
                     </p>
 
                     <p
@@ -277,6 +277,27 @@
                     isCustomer: @json(auth()->guard('customer')->check()),
 
                     isAddingToCart: false,
+                }
+            },
+
+            computed: {
+                discountPercent() {
+                    if (!this.product.on_sale) {
+                        return 0;
+                    }
+
+                    // Extract prices from product
+                    const prices = this.product.prices || {};
+                    const regularPrice = prices.regular?.price;
+                    const finalPrice = prices.final?.price;
+
+                    if (!regularPrice || !finalPrice || finalPrice >= regularPrice) {
+                        return 0;
+                    }
+
+                    // Calculate discount percentage
+                    const discount = ((regularPrice - finalPrice) / regularPrice) * 100;
+                    return Math.round(discount);
                 }
             },
 
