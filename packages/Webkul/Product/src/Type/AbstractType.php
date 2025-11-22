@@ -1089,4 +1089,26 @@ abstract class AbstractType
 
         return $lastPrice;
     }
+
+    /**
+     * Get discount percentage (0-100) based on regular vs minimal price.
+     * Uses indexed prices so it works across product types (simple, configurable, bundle, etc.).
+     */
+    public function getDiscountPercent(): int
+    {
+        // Use indexed minimal vs regular minimal to handle composite types correctly
+        $regular = (float) $this->getRegularMinimalPrice();
+        $final   = (float) $this->getMinimalPrice();
+
+        if ($regular <= 0 || $final >= $regular) {
+            return 0;
+        }
+
+        $percent = (($regular - $final) * 100) / $regular;
+
+        // Clamp to [0,100] and return integer percentage
+        $percent = max(0, min(100, (int) floor($percent + 0.00001)));
+
+        return $percent;
+    }
 }
