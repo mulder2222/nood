@@ -44,5 +44,6 @@ return [
     Webkul\Theme\Providers\ThemeServiceProvider::class,
     Webkul\User\Providers\UserServiceProvider::class,
     Webkul\Stripe\Providers\StripeServiceProvider::class,
+    Webkul\SmartHome\Providers\SmartHomeServiceProvider::class,
     BaWe\ProsCons\Providers\ProsConsServiceProvider::class,
 ];
