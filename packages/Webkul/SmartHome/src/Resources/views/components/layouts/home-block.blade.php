@@ -3,19 +3,19 @@
     <div class="w-full lg:w-1/4 bg-white border border-gray-300 border-b-0 order-2 lg:order-1 mt-2 md:mt-0">
         <ul class="space-y-1">
             <li class="flex items-center p-3 gap-2 border-b border-gray-300">
-                <img class="lazy w-16 h-16 object-cover" data-src="{{ bagisto_asset('images/intercomsystemen.jpeg') }}"> <a href="/intercomsystemen" class="text-black hover:underline">Intercomsystemen</a>
+                <img class="lazy w-16 h-16 object-cover" data-src="{{ bagisto_asset('images/intercomsystemen.jpeg') }}"> <a href="/diesel-generatoren" class="text-black hover:underline">Diesel generatoren</a>
             </li>
             <li class="flex items-center p-3 gap-2 border-b border-gray-300">
-                <img class="lazy w-16 h-16 object-cover" data-src="{{ bagisto_asset('images/Netwerksystemen.jpeg') }}"> <a href="/netwerksystemen" class="text-black hover:underline">Netwerksystemen</a>
+                <img class="lazy w-16 h-16 object-cover" data-src="{{ bagisto_asset('images/Netwerksystemen.jpeg') }}"> <a href="/benzine-generatoren" class="text-black hover:underline">Benzine generatoren</a>
             </li>
             <li class="flex items-center p-3 gap-2 border-b border-gray-300">
-                <img class="lazy w-16 h-16 object-cover" data-src="/storage/theme/13/8wLpnEm1GyCdbjr9b5bbE0vEyCpCyjkGfaZbGUQI.webp"> <a href="/camerasystemen" class="text-black hover:underline">Camerasystemen</a>
+                <img class="lazy w-16 h-16 object-cover" data-src="/storage/theme/13/8wLpnEm1GyCdbjr9b5bbE0vEyCpCyjkGfaZbGUQI.webp"> <a href="/olie-en-smeermiddelen" class="text-black hover:underline">Olie en smeermiddelen</a>
             </li>
             <li class="flex items-center p-2.5 gap-2 border-b border-gray-300">
-                <img class="lazy w-16 h-16 object-cover" data-src="/storage/theme/13/Rwrf0VdpRp15mBvOgEa3wfk99IjUi7bwoUICMCbs.webp"> <a href="/gereedschap" class="text-black hover:underline">Gereedschappen</a>
+                <img class="lazy w-16 h-16 object-cover" data-src="/storage/theme/13/Rwrf0VdpRp15mBvOgEa3wfk99IjUi7bwoUICMCbs.webp"> <a href="/brandstof-en-opslag" class="text-black hover:underline">Brandstof en opslag</a>
             </li>
             <li class="flex items-center p-3 gap-2 border-b border-gray-300">
-                <img class="lazy w-16 h-16 object-cover" data-src="{{ bagisto_asset('images/alarmsystemen.jpeg') }}"> <a href="/alarmsystemen" class="text-black hover:underline">Alarmsystemen</a>
+                <img class="lazy w-16 h-16 object-cover" data-src="{{ bagisto_asset('images/alarmsystemen.jpeg') }}"> <a href="/kabels-en-toebehoren" class="text-black hover:underline">Kabels en toebehoren</a>
             </li>
         </ul>
     </div>
