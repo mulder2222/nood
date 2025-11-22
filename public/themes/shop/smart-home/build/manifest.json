@@ -1,6 +1,6 @@
 {
   "src/Resources/assets/css/app.css": {
-    "file": "assets/app-CFiqZDMZ.css",
+    "file": "assets/app-C_kD2c6z.css",
     "src": "src/Resources/assets/css/app.css",
     "isEntry": true
   },
@@ -91,6 +91,10 @@
   "src/Resources/assets/images/nood-situatie.jpeg": {
     "file": "assets/nood-situatie-Cn4o69l6.jpeg",
     "src": "src/Resources/assets/images/nood-situatie.jpeg"
+  },
+  "src/Resources/assets/images/olie-actiecode.jpeg": {
+    "file": "assets/olie-actiecode-kYxHrPk0.jpeg",
+    "src": "src/Resources/assets/images/olie-actiecode.jpeg"
   },
   "src/Resources/assets/images/paypal.png": {
     "file": "assets/paypal-CIu1GKlz.png",

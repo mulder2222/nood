@@ -24,12 +24,12 @@
         <img class="lazy w-full h-[250px] lg:h-[455px] object-cover object-center" data-src="{{ bagisto_asset('images/mega-deal-generator.jpeg') }}" alt="Homepage banner" />
     </div>
     <!-- Rechter blok -->
-    <div class="hidden sm:block w-full lg:w-1/4 bg-gray-100 lg:p-2 lg:ml-4 order-3 lg:order-3 space-y-7">
+    <div class="hidden sm:block w-full lg:w-1/4 bg-gray-100 lg:ml-4 order-3 lg:order-3 space-y-7">
         <div class="space-y-2">
             <x-shop::layouts.opening-status />
         </div>
         <div class="">
-            <img class="lazy w-full max-w-[340px] h-auto object-cover" data-src="{{ bagisto_asset('images/nood-situatie-voorbereid.jpeg') }}" alt="Ben jij voorbereid?" />
+            <img class="lazy w-full max-w-[340px] h-[322px] object-cover" data-src="{{ bagisto_asset('images/nood-situatie-voorbereid.jpeg') }}" alt="Ben jij voorbereid?" />
         </div>
     </div>
 </div>
@@ -42,7 +42,7 @@
         </div>
         <!-- Banner 2 -->
         <div class="overflow-hidden">
-            <img class="lazy w-full h-40 object-cover object-center" data-src="{{ bagisto_asset('images/banner-jerrycan.jpeg') }}" alt="Banner 2" />
+            <img class="lazy w-full h-40 object-cover object-center" data-src="{{ bagisto_asset('images/olie-actiecode.jpeg') }}" alt="Olie actie coupon" />
         </div>
     </div>
 </div>
