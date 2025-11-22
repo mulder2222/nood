@@ -23,16 +23,17 @@ return [
                 'build_directory'          => 'themes/shop/default/build',
                 'package_assets_directory' => 'src/Resources/assets',
             ],
-            'smart-home' => [
-                'name'        => 'Smart Home',
-                'assets_path' => 'public/themes/shop/smart-home',
-                'views_path'  => 'resources/themes/smart-home/views',
+        ],
 
-                'vite'        => [
-                    'hot_file'                 => 'shop-smart-home-vite.hot',
-                    'build_directory'          => 'themes/shop/smart-home/build',
-                    'package_assets_directory' => 'src/Resources/assets',
-                ],
+        'smart-home' => [
+            'name'        => 'Smart Home',
+            'assets_path' => 'public/themes/shop/smart-home',
+            'views_path'  => 'resources/themes/smart-home/views',
+
+            'vite'        => [
+                'hot_file'                 => 'shop-smart-home-vite.hot',
+                'build_directory'          => 'themes/shop/smart-home/build',
+                'package_assets_directory' => 'src/Resources/assets',
             ],
         ],
     ],
