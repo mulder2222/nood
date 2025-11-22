@@ -29,18 +29,16 @@
             <x-shop::layouts.opening-status />
         </div>
         <div class="">
-            <img class="lazy w-full max-w-[340px] h-[322px] object-cover" data-src="{{ bagisto_asset('images/nood-situatie-voorbereid.jpeg') }}" alt="Ben jij voorbereid?" />
+            <a href="https://www.rijksoverheid.nl/" target="_blank"><img class="lazy w-full max-w-[340px] h-[322px] object-cover" data-src="{{ bagisto_asset('images/nood-situatie-voorbereid.jpeg') }}" alt="Ben jij voorbereid?" /></a>
         </div>
     </div>
 </div>
 <!-- Second part -->
 <div class="container lg:px-0 mx-auto mt-6 px-4 hidden sm:block">
     <div class="grid grid-cols-1 grid-cols-2 gap-4">
-        <!-- Banner 1 -->
         <div class="overflow-hidden">
             <img class="lazy w-full h-40 object-cover object-center" data-src="{{ bagisto_asset('images/banner-jerrycan.jpeg') }}" alt="Jerrycan" />
         </div>
-        <!-- Banner 2 -->
         <div class="overflow-hidden">
             <img class="lazy w-full h-40 object-cover object-center" data-src="{{ bagisto_asset('images/olie-actiecode-actie.jpeg') }}" alt="Olie actie coupon" />
         </div>
