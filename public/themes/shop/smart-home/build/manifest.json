@@ -24,6 +24,10 @@
     "file": "assets/benzine-generators-CND_awLV.jpeg",
     "src": "src/Resources/assets/images/benzine-generators.jpeg"
   },
+  "src/Resources/assets/images/benzine.jpeg": {
+    "file": "assets/benzine-CHCH_26v.jpeg",
+    "src": "src/Resources/assets/images/benzine.jpeg"
+  },
   "src/Resources/assets/images/cash-on-delivery.png": {
     "file": "assets/cash-on-delivery-Ck2rBtSq.png",
     "src": "src/Resources/assets/images/cash-on-delivery.png"

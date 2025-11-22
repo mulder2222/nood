@@ -53,7 +53,7 @@ class CartAddressRequest extends FormRequest
             "{$addressType}.address"      => ['required', 'array', 'min:1'],
             "{$addressType}.city"         => ['required'],
             "{$addressType}.country"      => core()->isCountryRequired() ? ['required'] : ['nullable'],
-            "{$addressType}.state"        => core()->isStateRequired() ? ['required'] : ['nullable'],
+            "{$addressType}.state"        => ['nullable'], // Changed: state is now always optional
             "{$addressType}.postcode"     => core()->isPostCodeRequired() ? ['required', new PostCode] : [new PostCode],
             "{$addressType}.phone"        => ['required', new PhoneNumber],
         ]);
