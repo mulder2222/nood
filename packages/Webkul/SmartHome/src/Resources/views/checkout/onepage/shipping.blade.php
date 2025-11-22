@@ -119,8 +119,7 @@
                             if (response.data.redirect_url) {
                                 window.location.href = response.data.redirect_url;
                             } else {
-                                // Automatically select Stripe payment method and proceed to review
-                                this.autoSelectStripeAndProceed(response.data.payment_methods);
+                                this.$emit('processed', response.data.payment_methods);
                             }
                         })
                         .catch(error => {
@@ -129,40 +128,6 @@
                             if (error.response.data.redirect_url) {
                                 window.location.href = error.response.data.redirect_url;
                             }
-                        });
-                },
-
-                autoSelectStripeAndProceed(paymentMethods) {
-                    // Find Stripe payment method
-                    const stripeMethod = paymentMethods?.payment_methods?.find(
-                        method => method.method === 'stripe'
-                    );
-
-                    if (!stripeMethod) {
-                        // If no Stripe method, proceed normally to payment selection
-                        this.$emit('processed', paymentMethods.payment_methods);
-                        return;
-                    }
-
-                    // Automatically save Stripe as payment method
-                    this.$axios.post("{{ route('shop.checkout.onepage.payment_methods.store') }}", {
-                            payment: {
-                                method: 'stripe',
-                                stripe_submethod: 'card' // Default to card
-                            }
-                        })
-                        .then(paymentResponse => {
-                            // Go directly to review step - customer can now place order
-                            this.$emit('processing', 'review');
-                            
-                            // Small delay to ensure smooth transition
-                            this.$nextTick(() => {
-                                this.$emit('processed', paymentResponse.data.cart);
-                            });
-                        })
-                        .catch(error => {
-                            // If auto-select fails, show payment methods normally
-                            this.$emit('processed', paymentMethods.payment_methods);
                         });
                 },
             },
