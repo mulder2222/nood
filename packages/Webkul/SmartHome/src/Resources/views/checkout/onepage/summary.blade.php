@@ -80,7 +80,7 @@
                 @{{ cart.formatted_sub_total }}
             </p>
         </div>
-        
+
         <div class="flex justify-between text-right">
             <p class="text-base max-sm:text-sm">
                 @lang('shop::app.checkout.onepage.summary.sub-total-incl-tax')
@@ -133,7 +133,7 @@
 
     <!-- Shipping Rates -->
     {!! view_render_event('bagisto.shop.checkout.onepage.summary.delivery_charges.before') !!}
-        
+
     <template v-if="displayTax.shipping == 'including_tax'">
         <div class="flex justify-between text-right">
             <p class="text-base max-sm:text-sm">
@@ -156,7 +156,7 @@
                 @{{ cart.formatted_shipping_amount }}
             </p>
         </div>
-        
+
         <div class="flex justify-between text-right">
             <p class="text-base max-sm:text-sm">
                 @lang('shop::app.checkout.onepage.summary.delivery-charges-incl-tax')
@@ -213,7 +213,7 @@
 
             <p class="flex items-center gap-1 text-base font-medium max-sm:text-sm">
                 @{{ cart.formatted_tax_total }}
-                
+
                 <span
                     class="text-xl"
                     :class="{'icon-arrow-up': cart.show_taxes, 'icon-arrow-down': ! cart.show_taxes}"
@@ -256,4 +256,23 @@
     </div>
 
     {!! view_render_event('bagisto.shop.checkout.onepage.summary.grand_total.after') !!}
+
+    <!-- Payment Information -->
+    <div class="mt-6 rounded-lg border border-zinc-200 bg-gray-50 p-4 max-sm:mt-4 max-sm:p-3">
+        <div class="flex items-start gap-3">
+            <span class="icon-secure text-2xl text-green-600"></span>
+            <div class="flex-1">
+                <p class="text-sm font-semibold text-gray-800 max-sm:text-xs">
+                    Veilige betaling via
+                </p>
+                <p class="mt-1 text-base font-bold text-navyBlue max-sm:text-sm">
+                    SentraGuard Beveiliging B.V.
+                </p>
+                <p class="mt-2 text-xs text-gray-600 max-sm:text-[11px]">
+                    Uw betaling wordt veilig verwerkt via Stripe.
+                </p>
+            </div>
+        </div>
+    </div>
 </div>
+

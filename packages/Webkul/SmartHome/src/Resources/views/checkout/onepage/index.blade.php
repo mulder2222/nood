@@ -106,7 +106,7 @@
                         </div>
 
                         <div
-                            class="flex justify-end"
+                            class="flex flex-col gap-3"
                             v-if="canPlaceOrder"
                         >
                             <template v-if="cart.payment_method == 'paypal_smart_button'">
@@ -119,14 +119,19 @@
                             </template>
 
                             <template v-else>
-                                <x-shop::button
-                                    type="button"
-                                    class="primary-button w-max rounded-2xl bg-sentraRed px-11 py-3 max-md:mb-4 max-md:w-full max-md:max-w-full max-md:rounded-lg max-sm:py-1.5"
-                                    :title="trans('shop::app.checkout.onepage.summary.place-order')"
-                                    ::disabled="isPlacingOrder"
-                                    ::loading="isPlacingOrder"
-                                    @click="placeOrder"
-                                />
+                                <div class="flex flex-col gap-2">
+                                    <x-shop::button
+                                        type="button"
+                                        class="primary-button w-max rounded-2xl bg-sentraRed px-11 py-3 max-md:mb-4 max-md:w-full max-md:max-w-full max-md:rounded-lg max-sm:py-1.5"
+                                        :title="trans('shop::app.checkout.onepage.summary.place-order')"
+                                        ::disabled="isPlacingOrder"
+                                        ::loading="isPlacingOrder"
+                                        @click="placeOrder"
+                                    />
+                                    <p class="text-center text-xs text-gray-600 max-md:mb-2 max-sm:text-[10px]">
+                                        Betaling via <span class="font-semibold">SentraGuard Beveiliging B.V.</span>
+                                    </p>
+                                </div>
                             </template>
                         </div>
                     </div>
