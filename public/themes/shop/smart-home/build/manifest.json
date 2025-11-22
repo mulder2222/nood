@@ -1,6 +1,6 @@
 {
   "src/Resources/assets/css/app.css": {
-    "file": "assets/app-DEcat2jm.css",
+    "file": "assets/app-CFiqZDMZ.css",
     "src": "src/Resources/assets/css/app.css",
     "isEntry": true
   },
@@ -15,6 +15,10 @@
   "src/Resources/assets/images/alarmsystemen.jpeg": {
     "file": "assets/alarmsystemen-C_-0u3Fh.jpeg",
     "src": "src/Resources/assets/images/alarmsystemen.jpeg"
+  },
+  "src/Resources/assets/images/banner-jerrycan.jpeg": {
+    "file": "assets/banner-jerrycan-B1dNOo8P.jpeg",
+    "src": "src/Resources/assets/images/banner-jerrycan.jpeg"
   },
   "src/Resources/assets/images/cash-on-delivery.png": {
     "file": "assets/cash-on-delivery-Ck2rBtSq.png",
@@ -67,6 +71,10 @@
   "src/Resources/assets/images/medium-product-placeholder.webp": {
     "file": "assets/medium-product-placeholder-INODB-G2.webp",
     "src": "src/Resources/assets/images/medium-product-placeholder.webp"
+  },
+  "src/Resources/assets/images/mega-deal-generator.jpeg": {
+    "file": "assets/mega-deal-generator-C4kcuwoG.jpeg",
+    "src": "src/Resources/assets/images/mega-deal-generator.jpeg"
   },
   "src/Resources/assets/images/money-transfer.png": {
     "file": "assets/money-transfer-BNjtOcYo.png",

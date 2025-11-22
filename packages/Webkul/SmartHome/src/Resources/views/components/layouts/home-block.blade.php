@@ -21,7 +21,7 @@
     </div>
     <!-- Midden blok (banner) -->
     <div class="w-full lg:w-1/2 bg-white order-1 lg:order-2 overflow-hidden">
-        <img class="lazy w-full h-[250px] lg:h-[455px] object-cover object-center" data-src="{{ bagisto_asset('images/homepage_banner_top.jpeg') }}" alt="Homepage banner" />
+        <img class="lazy w-full h-[250px] lg:h-[455px] object-cover object-center" data-src="{{ bagisto_asset('images/mega-deal-generator.jpeg') }}" alt="Homepage banner" />
     </div>
     <!-- Rechter blok -->
     <div class="hidden sm:block w-full lg:w-1/4 bg-gray-100 lg:p-2 lg:ml-4 order-3 lg:order-3 space-y-7">
@@ -38,11 +38,11 @@
     <div class="grid grid-cols-1 grid-cols-2 gap-4">
         <!-- Banner 1 -->
         <div class="overflow-hidden">
-            <img class="lazy w-full h-40 object-cover object-center" data-src="/storage/theme/13/05u2PbamuPc4VM9QQg19Jb5nfRaA7zhumKsHYdEF.webp" alt="Banner 1" />
+            <img class="lazy w-full h-40 object-cover object-center" data-src="{{ bagisto_asset('images/banner-jerrycan.jpeg') }}" alt="Jerrycan" />
         </div>
         <!-- Banner 2 -->
         <div class="overflow-hidden">
-            <img class="lazy w-full h-40 object-cover object-center" data-src="/storage/theme/13/TQW3fQ7cDktOhoLypTQgMPf9YUSxUXtWapx5K2t6.webp" alt="Banner 2" />
+            <img class="lazy w-full h-40 object-cover object-center" data-src="{{ bagisto_asset('images/banner-jerrycan.jpeg') }}" alt="Banner 2" />
         </div>
     </div>
 </div>
