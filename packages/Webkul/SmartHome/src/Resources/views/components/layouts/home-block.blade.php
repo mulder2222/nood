@@ -29,7 +29,7 @@
             <x-shop::layouts.opening-status />
         </div>
         <div class="">
-            <img class="lazy w-full max-w-[340px] h-auto object-cover" data-src="/storage/theme/13/qbVwWgWYlNg4c81JmlfBj4eJOop2oqtbIladdf08.webp" alt="Contact" />
+            <img class="lazy w-full max-w-[340px] h-auto object-cover" data-src="{{ bagisto_asset('images/nood-situatie.jpeg') }}" alt="Ben jij voorbereid?" />
         </div>
     </div>
 </div>
