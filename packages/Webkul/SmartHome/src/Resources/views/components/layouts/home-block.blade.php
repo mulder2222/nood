@@ -6,10 +6,10 @@
                 <img class="lazy w-16 h-16 object-cover" data-src="{{ bagisto_asset('images/generators.jpeg') }}"> <a href="/diesel-generatoren" class="text-black hover:underline">Diesel generatoren</a>
             </li>
             <li class="flex items-center p-3 gap-2 border-b border-gray-300">
-                <img class="lazy w-16 h-16 object-cover" data-src="{{ bagisto_asset('images/generators.jpeg') }}"> <a href="/benzine-generatoren" class="text-black hover:underline">Benzine generatoren</a>
+                <img class="lazy w-16 h-16 object-cover" data-src="{{ bagisto_asset('images/benzine-generators.jpeg') }}"> <a href="/benzine-generatoren" class="text-black hover:underline">Benzine generatoren</a>
             </li>
             <li class="flex items-center p-3 gap-2 border-b border-gray-300">
-                <img class="lazy w-16 h-16 object-cover" data-src="{{ bagisto_asset('images/generators.jpeg') }}"> <a href="/olie-en-smeermiddelen" class="text-black hover:underline">Olie en smeermiddelen</a>
+                <img class="lazy w-16 h-16 object-cover" data-src="{{ bagisto_asset('images/olie.jpeg') }}"> <a href="/olie-en-smeermiddelen" class="text-black hover:underline">Olie en smeermiddelen</a>
             </li>
             <li class="flex items-center p-2.5 gap-2 border-b border-gray-300">
                 <img class="lazy w-16 h-16 object-cover" data-src="{{ bagisto_asset('images/generators.jpeg') }}"> <a href="/brandstof-en-opslag" class="text-black hover:underline">Brandstof en opslag</a>
