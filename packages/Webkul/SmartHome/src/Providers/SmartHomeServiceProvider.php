@@ -46,15 +46,11 @@ class SmartHomeServiceProvider extends ServiceProvider
      */
     protected function overrideStateRequirement()
     {
-        // Override the Core helper to always return false for state requirement
-        $this->app->extend('core', function ($core, $app) {
-            return new class($app) extends \Webkul\Core\Core {
-                public function isStateRequired()
-                {
-                    return false;
-                }
-            };
-        });
+        // Bind custom CartAddressRequest that makes state field optional
+        $this->app->bind(
+            \Webkul\Shop\Http\Requests\CartAddressRequest::class,
+            \Webkul\SmartHome\Http\Requests\CartAddressRequest::class
+        );
     }
 
     /**
